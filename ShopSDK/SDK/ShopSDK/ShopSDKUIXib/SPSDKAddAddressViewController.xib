@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKAddAddressViewController">
+            <connections>
+                <outlet property="bottomConstraint" destination="opu-I0-ZiF" id="HkP-1O-FyE"/>
+                <outlet property="submitBtn" destination="iho-Or-qpi" id="gvc-Cq-3iE"/>
+                <outlet property="tableView" destination="GZq-XT-jYp" id="jhl-fo-hmf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GZq-XT-jYp" customClass="SPSDKTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Uhj-8u-3yc"/>
+                        <outlet property="delegate" destination="-1" id="XGR-P5-IEx"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iho-Or-qpi">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="0XN-Od-7XR"/>
+                    </constraints>
+                    <state key="normal" title="保存"/>
+                    <connections>
+                        <action selector="_onSubmitAction:" destination="-1" eventType="touchUpInside" id="3Ci-uH-bfq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GZq-XT-jYp" secondAttribute="trailing" id="5l7-X2-bvL"/>
+                <constraint firstAttribute="trailing" secondItem="iho-Or-qpi" secondAttribute="trailing" id="5vV-RQ-I6p"/>
+                <constraint firstItem="iho-Or-qpi" firstAttribute="top" secondItem="GZq-XT-jYp" secondAttribute="bottom" id="Gaq-RO-ttp"/>
+                <constraint firstItem="GZq-XT-jYp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RID-lA-Xgq"/>
+                <constraint firstItem="GZq-XT-jYp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="i8Q-ey-91Y"/>
+                <constraint firstItem="iho-Or-qpi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lOD-21-ld4"/>
+                <constraint firstAttribute="bottom" secondItem="iho-Or-qpi" secondAttribute="bottom" id="opu-I0-ZiF"/>
+            </constraints>
+            <point key="canvasLocation" x="-148" y="41"/>
+        </view>
+    </objects>
+</document>

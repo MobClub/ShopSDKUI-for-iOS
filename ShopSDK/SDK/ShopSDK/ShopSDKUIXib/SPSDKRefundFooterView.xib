@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPSDKRefundFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仅退款，退款成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsi-re-fTp">
+                    <rect key="frame" x="15" y="11" width="114.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIz-DP-t0T">
+                    <rect key="frame" x="320" y="10" width="40" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="BLV-qu-uTW"/>
+                        <constraint firstAttribute="width" constant="40" id="tdR-S1-yIw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="详情">
+                        <color key="titleColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onDetailAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="HdP-JV-QmB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bsi-re-fTp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="BZp-yu-qsE"/>
+                <constraint firstItem="bsi-re-fTp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GBF-8J-4tz"/>
+                <constraint firstAttribute="trailing" secondItem="pIz-DP-t0T" secondAttribute="trailing" constant="15" id="QfG-EP-dnv"/>
+                <constraint firstItem="pIz-DP-t0T" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ak1-L2-J7t"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailBtn" destination="pIz-DP-t0T" id="Jgr-jX-cNy"/>
+                <outlet property="detailLabel" destination="bsi-re-fTp" id="O4P-sJ-ZBt"/>
+            </connections>
+        </view>
+    </objects>
+</document>

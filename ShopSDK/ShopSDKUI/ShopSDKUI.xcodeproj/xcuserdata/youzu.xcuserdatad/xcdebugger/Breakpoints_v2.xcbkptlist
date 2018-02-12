@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShopSDKUI/Custom/SPSDKPickerView.m"
+            timestampString = "538922872.23748"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-selectProvinceId:cityId:districtId:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SPSDKPickerView selectProvinceId:cityId:districtId:]"
+                  moduleName = "ShopSDKUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/youzu/Desktop/SVN/ShopSDK/trunk/ShopSDK/ShopSDKUI/ShopSDKUI/Custom/SPSDKPickerView.m"
+                  timestampString = "538922872.347694"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__54-[SPSDKPickerView selectProvinceId:cityId:districtId:]_block_invoke"
+                  moduleName = "ShopSDKUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/youzu/Desktop/SVN/ShopSDK/trunk/ShopSDK/ShopSDKUI/ShopSDKUI/Custom/SPSDKPickerView.m"
+                  timestampString = "538922872.349835"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

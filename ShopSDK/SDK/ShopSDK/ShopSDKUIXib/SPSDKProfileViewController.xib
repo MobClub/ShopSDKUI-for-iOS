@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKProfileViewController">
+            <connections>
+                <outlet property="tableView" destination="PhZ-7X-cHx" id="6oV-bP-8cs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PhZ-7X-cHx" customClass="SPSDKTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cCe-Vq-87l"/>
+                        <outlet property="delegate" destination="-1" id="xLa-t0-k8c"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PhZ-7X-cHx" secondAttribute="trailing" id="QtF-no-KYq"/>
+                <constraint firstAttribute="bottom" secondItem="PhZ-7X-cHx" secondAttribute="bottom" id="dJ2-Y5-CxE"/>
+                <constraint firstItem="PhZ-7X-cHx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qgW-I4-gdz"/>
+                <constraint firstItem="PhZ-7X-cHx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wvw-et-UW9"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

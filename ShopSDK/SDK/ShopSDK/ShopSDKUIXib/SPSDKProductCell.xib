@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SPSDKProductCell" id="KGk-i7-Jjw" customClass="SPSDKProductCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="490"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="489.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="乔丹 男跑鞋缓震气垫运动鞋跑乔丹 男跑鞋缓震气垫运动鞋跑乔丹 男跑鞋缓震气垫运动鞋跑乔丹 男跑鞋缓震气垫运动鞋跑" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtZ-ih-Hz3">
+                        <rect key="frame" x="15" y="385" width="345" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="LGd-Yz-hbi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OK-bb-tqC">
+                        <rect key="frame" x="15" y="462" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDl-b4-MA9">
+                        <rect key="frame" x="15" y="430" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7m-Kt-i7B" customClass="SDCycleScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="A7m-Kt-i7B" secondAttribute="height" multiplier="1:1" id="f8A-CF-H1s"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VtZ-ih-Hz3" firstAttribute="top" secondItem="A7m-Kt-i7B" secondAttribute="bottom" constant="10" id="6D8-no-5LE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4OK-bb-tqC" secondAttribute="bottom" constant="5" id="9cE-5J-4zB"/>
+                    <constraint firstAttribute="trailing" secondItem="A7m-Kt-i7B" secondAttribute="trailing" id="Amv-G4-nvZ"/>
+                    <constraint firstItem="A7m-Kt-i7B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="I5d-8G-wZ9"/>
+                    <constraint firstItem="dDl-b4-MA9" firstAttribute="top" secondItem="VtZ-ih-Hz3" secondAttribute="bottom" constant="10" id="KAF-f3-hAT"/>
+                    <constraint firstItem="A7m-Kt-i7B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="k77-8a-XCx"/>
+                    <constraint firstItem="dDl-b4-MA9" firstAttribute="leading" secondItem="VtZ-ih-Hz3" secondAttribute="leading" id="lRh-Sd-d61"/>
+                    <constraint firstItem="VtZ-ih-Hz3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="nIE-hE-cIn"/>
+                    <constraint firstItem="4OK-bb-tqC" firstAttribute="leading" secondItem="VtZ-ih-Hz3" secondAttribute="leading" id="q3w-NR-QWS"/>
+                    <constraint firstAttribute="trailing" secondItem="VtZ-ih-Hz3" secondAttribute="trailing" constant="15" id="xwQ-Bq-ljD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bannerView" destination="A7m-Kt-i7B" id="Uzf-xt-64x"/>
+                <outlet property="payNumLabel" destination="4OK-bb-tqC" id="cag-RU-YG2"/>
+                <outlet property="productNameLabel" destination="VtZ-ih-Hz3" id="Vg0-la-LFP"/>
+                <outlet property="productPriceLabel" destination="dDl-b4-MA9" id="5vE-hB-6zf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

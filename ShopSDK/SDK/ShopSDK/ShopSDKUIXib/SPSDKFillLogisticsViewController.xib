@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKFillLogisticsViewController">
+            <connections>
+                <outlet property="submitBtn" destination="FDG-B8-cYe" id="gfX-6J-OGR"/>
+                <outlet property="tableView" destination="6WM-QI-ySb" id="PRa-f3-YP3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDG-B8-cYe">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="FoF-3s-2Cs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="提交"/>
+                    <connections>
+                        <action selector="onSubmitAction:" destination="-1" eventType="touchUpInside" id="sNf-o4-2Uu"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="6WM-QI-ySb" customClass="SPSDKGroupTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xgm-Mj-syx"/>
+                        <outlet property="delegate" destination="-1" id="6pD-Wu-b5I"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6WM-QI-ySb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0uM-3E-Wja"/>
+                <constraint firstItem="6WM-QI-ySb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3ZK-iz-oCM"/>
+                <constraint firstItem="6WM-QI-ySb" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="6xc-l8-p7X"/>
+                <constraint firstAttribute="bottom" secondItem="FDG-B8-cYe" secondAttribute="bottom" id="7u9-bd-IEk"/>
+                <constraint firstItem="FDG-B8-cYe" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="aQO-9g-Hca"/>
+                <constraint firstItem="FDG-B8-cYe" firstAttribute="top" secondItem="6WM-QI-ySb" secondAttribute="bottom" id="it7-i4-LFk"/>
+                <constraint firstItem="FDG-B8-cYe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="j4e-11-JF5"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKCourierCompanyViewController">
+            <connections>
+                <outlet property="bottomConstraint" destination="ysX-iu-8ez" id="c1x-hz-trU"/>
+                <outlet property="sureBtn" destination="2vg-YY-cSF" id="76R-Yz-UV0"/>
+                <outlet property="tableView" destination="pz9-eP-zGH" id="Jyh-62-M7N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pz9-eP-zGH" customClass="SPSDKTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="WeS-OO-1PS"/>
+                        <outlet property="delegate" destination="-1" id="vJz-on-iEh"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vg-YY-cSF">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="RNW-fJ-zys"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="onSureAction:" destination="-1" eventType="touchUpInside" id="mQs-3f-fco"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pz9-eP-zGH" secondAttribute="trailing" id="Dq0-gz-8H3"/>
+                <constraint firstItem="pz9-eP-zGH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H2s-Y2-Dvi"/>
+                <constraint firstItem="2vg-YY-cSF" firstAttribute="top" secondItem="pz9-eP-zGH" secondAttribute="bottom" id="MKp-3u-ZMX"/>
+                <constraint firstItem="pz9-eP-zGH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Qr6-Rt-y9c"/>
+                <constraint firstItem="2vg-YY-cSF" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="XJp-Ni-iTh"/>
+                <constraint firstItem="2vg-YY-cSF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qWJ-ef-dI5"/>
+                <constraint firstAttribute="bottom" secondItem="2vg-YY-cSF" secondAttribute="bottom" id="ysX-iu-8ez"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

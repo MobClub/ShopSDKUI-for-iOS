@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPSDKRefundPhotoFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbF-67-m7W">
+                    <rect key="frame" x="0.0" y="10" width="375" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UM-zQ-wqu">
+                            <rect key="frame" x="15" y="10" width="57.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pNR-1t-XYX">
+                            <rect key="frame" x="15" y="45" width="345" height="80"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Y7q-TF-HOe">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pNR-1t-XYX" secondAttribute="bottom" constant="15" id="1w3-SY-5iM"/>
+                        <constraint firstItem="pNR-1t-XYX" firstAttribute="top" secondItem="9UM-zQ-wqu" secondAttribute="bottom" constant="18" id="CWQ-a7-lGy"/>
+                        <constraint firstItem="9UM-zQ-wqu" firstAttribute="top" secondItem="MbF-67-m7W" secondAttribute="top" constant="10" id="Dv3-Bu-24S"/>
+                        <constraint firstItem="9UM-zQ-wqu" firstAttribute="leading" secondItem="MbF-67-m7W" secondAttribute="leading" constant="15" id="qYK-8L-mCw"/>
+                        <constraint firstItem="pNR-1t-XYX" firstAttribute="leading" secondItem="MbF-67-m7W" secondAttribute="leading" constant="15" id="y8w-nd-Drl"/>
+                        <constraint firstAttribute="trailing" secondItem="pNR-1t-XYX" secondAttribute="trailing" constant="15" id="ybL-Nb-ygS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MbF-67-m7W" secondAttribute="trailing" id="Hbu-oA-oig"/>
+                <constraint firstItem="MbF-67-m7W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="J7N-LY-moW"/>
+                <constraint firstAttribute="bottom" secondItem="MbF-67-m7W" secondAttribute="bottom" id="fkW-Dw-nrx"/>
+                <constraint firstItem="MbF-67-m7W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xaT-tw-5kh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="pNR-1t-XYX" id="Nx0-tX-asX"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPSDKRefundDetailHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5天15小时23分钟系统自动关闭退款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKE-2u-dGg">
+                    <rect key="frame" x="15" y="45" width="194.5" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请买家退回商品并提供运单号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egu-eh-4cY">
+                    <rect key="frame" x="15" y="15" width="186" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-03-12 12:08:09" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wj-kF-Z7d">
+                    <rect key="frame" x="239.5" y="16" width="120.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6wj-kF-Z7d" firstAttribute="centerY" secondItem="Egu-eh-4cY" secondAttribute="centerY" id="0Kc-cF-sF5"/>
+                <constraint firstItem="Egu-eh-4cY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="0ce-D9-dwB"/>
+                <constraint firstAttribute="bottom" secondItem="VKE-2u-dGg" secondAttribute="bottom" constant="6" id="4jw-Xb-SHw"/>
+                <constraint firstItem="VKE-2u-dGg" firstAttribute="leading" secondItem="Egu-eh-4cY" secondAttribute="leading" id="FyE-dk-YJI"/>
+                <constraint firstItem="Egu-eh-4cY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="MUC-So-537"/>
+                <constraint firstAttribute="trailing" secondItem="6wj-kF-Z7d" secondAttribute="trailing" constant="15" id="h3P-vv-7nS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="6wj-kF-Z7d" id="f0A-VC-lUb"/>
+                <outlet property="remainLabel" destination="VKE-2u-dGg" id="hsT-aq-vOb"/>
+                <outlet property="stateLabel" destination="Egu-eh-4cY" id="phP-6b-oyZ"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="-243.5"/>
+        </view>
+    </objects>
+</document>

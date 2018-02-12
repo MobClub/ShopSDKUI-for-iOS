@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKCountView">
+            <connections>
+                <outlet property="addBtn" destination="TIY-K8-7V6" id="YdH-kF-8Vi"/>
+                <outlet property="numTextField" destination="WSf-ll-jpM" id="a08-Xv-xQj"/>
+                <outlet property="subBtn" destination="oxE-N9-9y6" id="QV1-Bm-rXV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxE-N9-9y6">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="25"/>
+                    <state key="normal" image="sub"/>
+                    <connections>
+                        <action selector="decrease:" destination="-1" eventType="touchUpInside" id="tmc-q8-nDq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIY-K8-7V6">
+                    <rect key="frame" x="84" y="0.0" width="30" height="25"/>
+                    <state key="normal" image="add"/>
+                    <connections>
+                        <action selector="increase:" destination="-1" eventType="touchUpInside" id="8jB-Ic-Kap"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WSf-ll-jpM">
+                    <rect key="frame" x="32" y="0.0" width="50" height="25"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Ukr-2J-BMP"/>
+                        <constraint firstAttribute="height" constant="25" id="Vkp-x4-hLo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="TIY-K8-7V6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="07b-5V-XZW"/>
+                <constraint firstAttribute="trailing" secondItem="TIY-K8-7V6" secondAttribute="trailing" id="4OU-Vh-NKl"/>
+                <constraint firstItem="WSf-ll-jpM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DZL-k1-YMD"/>
+                <constraint firstItem="oxE-N9-9y6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QBc-yL-aoU"/>
+                <constraint firstItem="oxE-N9-9y6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vyd-lf-rcx"/>
+                <constraint firstItem="WSf-ll-jpM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tce-Yq-cI1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="237.5" y="117.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="30" height="25"/>
+        <image name="sub" width="30" height="25"/>
+    </resources>
+</document>

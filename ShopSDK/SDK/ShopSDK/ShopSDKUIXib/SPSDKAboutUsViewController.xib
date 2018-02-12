@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKAboutUsViewController">
+            <connections>
+                <outlet property="bottomConstraint" destination="e9S-C1-yD2" id="AyK-4X-0Mh"/>
+                <outlet property="companyDetailLabel" destination="PpX-Kd-M5F" id="Lpx-BJ-JAm"/>
+                <outlet property="companyLabel" destination="fT4-un-don" id="afp-jI-zNd"/>
+                <outlet property="headerView" destination="KOV-eh-Umg" id="OnZ-MP-pxV"/>
+                <outlet property="versionView" destination="MK8-26-ht8" id="tMa-s6-AWA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_shopsdk" translatesAutoresizingMaskIntoConstraints="NO" id="jxM-ZV-79M">
+                    <rect key="frame" x="250" y="115" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="8q4-lH-kZU"/>
+                        <constraint firstAttribute="height" constant="100" id="btA-gB-LfJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShopSDK是一款商城SDK，通过接入我们SDK，开发者可以快速搭建属于自己的商城系统，ShopSDK demo主要为暂时ShopSDK的主要功能及流程，帮助开发者更好的了解产品，更快的定制出属于自己的电子商务系统" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK6-rN-dX8">
+                    <rect key="frame" x="15" y="259" width="570" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海游昆信息技术有限公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT4-un-don">
+                    <rect key="frame" x="226.5" y="541" width="147.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ©2000－2017 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpX-Kd-M5F">
+                    <rect key="frame" x="229" y="570.5" width="142" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOV-eh-Umg" customClass="SPSDKAboutUsHeaderView">
+                    <rect key="frame" x="15" y="401" width="570" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xb4-TB-tay"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MK8-26-ht8" customClass="SPSDKVersionView">
+                    <rect key="frame" x="15" y="441" width="570" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NZS-td-q3O"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="MK8-26-ht8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="4Yy-KU-Xl1"/>
+                <constraint firstItem="PpX-Kd-M5F" firstAttribute="top" secondItem="fT4-un-don" secondAttribute="bottom" constant="15" id="5nT-ER-ZHx"/>
+                <constraint firstItem="jxM-ZV-79M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bxz-vi-5wy"/>
+                <constraint firstItem="KOV-eh-Umg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="EC2-JX-INw"/>
+                <constraint firstItem="DK6-rN-dX8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="JL5-GO-9Q9"/>
+                <constraint firstAttribute="trailing" secondItem="DK6-rN-dX8" secondAttribute="trailing" constant="15" id="RC4-H0-xm4"/>
+                <constraint firstItem="fT4-un-don" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U2B-xc-b4E"/>
+                <constraint firstItem="MK8-26-ht8" firstAttribute="top" secondItem="KOV-eh-Umg" secondAttribute="bottom" id="bEl-qy-z40"/>
+                <constraint firstItem="jxM-ZV-79M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="115" id="cWe-nq-CdI"/>
+                <constraint firstAttribute="bottom" secondItem="PpX-Kd-M5F" secondAttribute="bottom" constant="15" id="e9S-C1-yD2"/>
+                <constraint firstItem="KOV-eh-Umg" firstAttribute="top" secondItem="DK6-rN-dX8" secondAttribute="bottom" constant="95" id="gSS-IE-AwF"/>
+                <constraint firstItem="PpX-Kd-M5F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iK9-4H-jJo"/>
+                <constraint firstAttribute="trailing" secondItem="MK8-26-ht8" secondAttribute="trailing" constant="15" id="ouo-Vw-EbW"/>
+                <constraint firstItem="DK6-rN-dX8" firstAttribute="top" secondItem="jxM-ZV-79M" secondAttribute="bottom" constant="44" id="pBk-Jz-qoq"/>
+                <constraint firstAttribute="trailing" secondItem="KOV-eh-Umg" secondAttribute="trailing" constant="15" id="xMk-Yj-802"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_shopsdk" width="100" height="100"/>
+    </resources>
+</document>

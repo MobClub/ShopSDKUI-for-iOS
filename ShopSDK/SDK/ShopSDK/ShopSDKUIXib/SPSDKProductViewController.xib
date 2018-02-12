@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKProductViewController">
+            <connections>
+                <outlet property="addShopCartBtn" destination="Ksg-BJ-TJJ" id="Pwq-uX-jhW"/>
+                <outlet property="bottomConstraint" destination="ZEV-VH-wTw" id="Nt9-JX-J0U"/>
+                <outlet property="buyNowBtn" destination="zdT-EB-7Bi" id="AQT-bb-bGc"/>
+                <outlet property="serviceView" destination="PY9-Fm-9u3" id="p8i-vG-2Oi"/>
+                <outlet property="shopCartView" destination="NuU-t0-3fw" id="i1e-H5-ngR"/>
+                <outlet property="tableView" destination="3Ho-NF-tev" id="FLj-EF-VDV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="3Ho-NF-tev" customClass="SPSDKGroupTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="FEg-dO-zff"/>
+                        <outlet property="delegate" destination="-1" id="5bP-Ek-8TO"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhk-n0-VSd">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdT-EB-7Bi">
+                            <rect key="frame" x="114" y="0.0" width="243" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="立即购买"/>
+                            <connections>
+                                <action selector="onBuyNowAction:" destination="-1" eventType="touchUpInside" id="euq-AI-yqp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksg-BJ-TJJ">
+                            <rect key="frame" x="357" y="0.0" width="243" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="加入购物车"/>
+                            <connections>
+                                <action selector="onAddShopCartAction:" destination="-1" eventType="touchUpInside" id="dwa-rL-OVJ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-Fm-9u3">
+                            <rect key="frame" x="0.0" y="0.0" width="57" height="45"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service" translatesAutoresizingMaskIntoConstraints="NO" id="fNl-wB-pjU">
+                                    <rect key="frame" x="16" y="3" width="25" height="25"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客服" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aas-kt-o65">
+                                    <rect key="frame" x="16" y="27.5" width="25" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="fNl-wB-pjU" firstAttribute="centerX" secondItem="PY9-Fm-9u3" secondAttribute="centerX" id="BfV-ZM-qrs"/>
+                                <constraint firstAttribute="width" constant="57" id="EuL-b3-Zsk"/>
+                                <constraint firstAttribute="bottom" secondItem="aas-kt-o65" secondAttribute="bottom" constant="3" id="gmW-7B-PCy"/>
+                                <constraint firstItem="fNl-wB-pjU" firstAttribute="top" secondItem="PY9-Fm-9u3" secondAttribute="top" constant="3" id="i6Z-hk-5Mo"/>
+                                <constraint firstItem="aas-kt-o65" firstAttribute="centerX" secondItem="PY9-Fm-9u3" secondAttribute="centerX" id="kTV-KO-69X"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="service"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="客服"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NuU-t0-3fw">
+                            <rect key="frame" x="57" y="0.0" width="57" height="45"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_shopcart_normal" translatesAutoresizingMaskIntoConstraints="NO" id="ock-jm-9gV">
+                                    <rect key="frame" x="16" y="3" width="25" height="25"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxP-sD-knZ">
+                                    <rect key="frame" x="10" y="27.5" width="37" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="57" id="Can-Xz-9h1"/>
+                                <constraint firstItem="xxP-sD-knZ" firstAttribute="centerX" secondItem="NuU-t0-3fw" secondAttribute="centerX" id="Kli-eR-wpx"/>
+                                <constraint firstItem="ock-jm-9gV" firstAttribute="top" secondItem="NuU-t0-3fw" secondAttribute="top" constant="3" id="Vtt-pC-p4h"/>
+                                <constraint firstAttribute="bottom" secondItem="xxP-sD-knZ" secondAttribute="bottom" constant="3" id="boF-J3-dpX"/>
+                                <constraint firstItem="ock-jm-9gV" firstAttribute="centerX" secondItem="NuU-t0-3fw" secondAttribute="centerX" id="rCn-n3-CBd"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="tabbar_shopcart_normal"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="购物车"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ksg-BJ-TJJ" secondAttribute="trailing" id="5px-Ua-QgN"/>
+                        <constraint firstItem="NuU-t0-3fw" firstAttribute="leading" secondItem="PY9-Fm-9u3" secondAttribute="trailing" id="6Mi-R8-fjZ"/>
+                        <constraint firstAttribute="height" constant="45" id="ETZ-lH-uRH"/>
+                        <constraint firstAttribute="bottom" secondItem="PY9-Fm-9u3" secondAttribute="bottom" id="Faz-PB-GYH"/>
+                        <constraint firstAttribute="bottom" secondItem="zdT-EB-7Bi" secondAttribute="bottom" id="Hzr-JL-Mlf"/>
+                        <constraint firstItem="NuU-t0-3fw" firstAttribute="top" secondItem="Rhk-n0-VSd" secondAttribute="top" id="M9R-35-8dR"/>
+                        <constraint firstAttribute="bottom" secondItem="Ksg-BJ-TJJ" secondAttribute="bottom" id="OSC-qf-KUG"/>
+                        <constraint firstItem="PY9-Fm-9u3" firstAttribute="leading" secondItem="Rhk-n0-VSd" secondAttribute="leading" id="P5v-TS-pQD"/>
+                        <constraint firstAttribute="bottom" secondItem="NuU-t0-3fw" secondAttribute="bottom" id="PrI-a7-mR0"/>
+                        <constraint firstItem="zdT-EB-7Bi" firstAttribute="leading" secondItem="NuU-t0-3fw" secondAttribute="trailing" id="PtU-io-an0"/>
+                        <constraint firstItem="Ksg-BJ-TJJ" firstAttribute="top" secondItem="Rhk-n0-VSd" secondAttribute="top" id="dTY-cR-HvR"/>
+                        <constraint firstItem="Ksg-BJ-TJJ" firstAttribute="width" secondItem="zdT-EB-7Bi" secondAttribute="width" id="l9B-Uf-3ZH"/>
+                        <constraint firstItem="PY9-Fm-9u3" firstAttribute="top" secondItem="Rhk-n0-VSd" secondAttribute="top" id="pzy-jM-iVj"/>
+                        <constraint firstItem="Ksg-BJ-TJJ" firstAttribute="leading" secondItem="zdT-EB-7Bi" secondAttribute="trailing" id="tz4-Cs-mZ0"/>
+                        <constraint firstItem="zdT-EB-7Bi" firstAttribute="top" secondItem="Rhk-n0-VSd" secondAttribute="top" id="uzB-Nu-mu2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3Ho-NF-tev" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="44p-yp-wIp"/>
+                <constraint firstItem="Rhk-n0-VSd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7go-Dr-JAF"/>
+                <constraint firstItem="Rhk-n0-VSd" firstAttribute="top" secondItem="3Ho-NF-tev" secondAttribute="bottom" id="Deh-Bb-VpR"/>
+                <constraint firstItem="3Ho-NF-tev" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PN3-xe-GFG"/>
+                <constraint firstAttribute="trailing" secondItem="Rhk-n0-VSd" secondAttribute="trailing" id="Xta-yP-fOV"/>
+                <constraint firstItem="Rhk-n0-VSd" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="ZEV-VH-wTw"/>
+                <constraint firstAttribute="trailing" secondItem="3Ho-NF-tev" secondAttribute="trailing" id="lpj-kV-aK9"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="120.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="service" width="25" height="25"/>
+        <image name="tabbar_shopcart_normal" width="25" height="25"/>
+    </resources>
+</document>

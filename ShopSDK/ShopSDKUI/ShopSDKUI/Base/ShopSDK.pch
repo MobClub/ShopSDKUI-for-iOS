@@ -1,0 +1,21 @@
+//
+//  ShopSDK.pch
+//  ShopSDKUI
+//
+//  Created by LeeJay on 2017/9/4.
+//  Copyright © 2017年 Mob. All rights reserved.
+//
+
+#ifndef ShopSDK_pch
+#define ShopSDK_pch
+
+#import <ShopSDK/ShopSDK.h>
+#import "SPSDKCategory.h"
+#import "ShopSDKMacro.h"
+#import "SPSDKTableView.h"
+#import "SPSDKGroupTableView.h"
+#import "UIImageView+WebCache.h"
+#import "SPSDKNavigationController.h"
+#import "MJRefresh.h"
+
+#endif /* ShopSDK_pch */

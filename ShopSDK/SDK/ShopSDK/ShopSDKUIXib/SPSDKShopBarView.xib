@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKShopBarView">
+            <connections>
+                <outlet property="payBtn" destination="bSR-Q0-gdo" id="vzZ-at-dMw"/>
+                <outlet property="priceLabel" destination="MZF-Ly-gpo" id="Htb-aU-r4J"/>
+                <outlet property="selectBtn" destination="KbV-l4-95M" id="aze-bF-9Qn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JNW-mg-kkM">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-l4-95M">
+                    <rect key="frame" x="5" y="12.5" width="70" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Dur-NR-kGw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                    <state key="normal" title="全选" image="shopcart_normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="全选" image="shopcart_selected"/>
+                    <connections>
+                        <action selector="_onSelectAction:" destination="-1" eventType="touchUpInside" id="FnG-Lc-mJT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-Q0-gdo">
+                    <rect key="frame" x="245" y="0.0" width="130" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="jIw-5G-y6e"/>
+                        <constraint firstAttribute="width" constant="130" id="xcq-sH-reR"/>
+                    </constraints>
+                    <state key="normal" title="去结算">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="_onPayAction:" destination="-1" eventType="touchUpInside" id="dEH-9p-Sjd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：￥1699.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZF-Ly-gpo">
+                    <rect key="frame" x="117.5" y="13.5" width="117.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MZF-Ly-gpo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KbV-l4-95M" secondAttribute="trailing" constant="5" id="3Bk-9B-Kon"/>
+                <constraint firstItem="MZF-Ly-gpo" firstAttribute="centerY" secondItem="JNW-mg-kkM" secondAttribute="centerY" id="5gk-fO-Fod"/>
+                <constraint firstItem="bSR-Q0-gdo" firstAttribute="leading" secondItem="MZF-Ly-gpo" secondAttribute="trailing" constant="10" id="BwE-z4-eyo"/>
+                <constraint firstItem="KbV-l4-95M" firstAttribute="centerY" secondItem="JNW-mg-kkM" secondAttribute="centerY" id="LU6-GV-Yb1"/>
+                <constraint firstItem="KbV-l4-95M" firstAttribute="leading" secondItem="JNW-mg-kkM" secondAttribute="leading" constant="5" id="PrN-e5-1Vv"/>
+                <constraint firstAttribute="trailing" secondItem="bSR-Q0-gdo" secondAttribute="trailing" id="p7D-og-M5t"/>
+                <constraint firstAttribute="bottom" secondItem="bSR-Q0-gdo" secondAttribute="bottom" id="uUj-Jl-Kut"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-155.5" y="112.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shopcart_normal" width="20" height="20"/>
+        <image name="shopcart_selected" width="20" height="20"/>
+    </resources>
+</document>

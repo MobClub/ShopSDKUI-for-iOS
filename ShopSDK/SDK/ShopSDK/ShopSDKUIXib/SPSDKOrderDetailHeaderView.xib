@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPSDKOrderDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Q7l-6b-5Cj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wait" translatesAutoresizingMaskIntoConstraints="NO" id="301-8v-5fr">
+                    <rect key="frame" x="15" y="12" width="14" height="14"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余：19小时23分钟 自动取消订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W28-oj-HjQ">
+                    <rect key="frame" x="15" y="36" width="191" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等待付款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpq-Ai-D6n">
+                    <rect key="frame" x="39" y="10" width="65.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="W28-oj-HjQ" firstAttribute="top" secondItem="301-8v-5fr" secondAttribute="bottom" constant="10" id="96G-ae-SQj"/>
+                <constraint firstItem="W28-oj-HjQ" firstAttribute="leading" secondItem="301-8v-5fr" secondAttribute="leading" id="Dt3-ZO-gRf"/>
+                <constraint firstItem="Q7l-6b-5Cj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IaD-MV-1Qs"/>
+                <constraint firstAttribute="bottom" secondItem="Q7l-6b-5Cj" secondAttribute="bottom" id="ZU5-Wr-UKd"/>
+                <constraint firstItem="W28-oj-HjQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="g2T-B1-Rg2"/>
+                <constraint firstAttribute="trailing" secondItem="Q7l-6b-5Cj" secondAttribute="trailing" id="qEa-jg-fU4"/>
+                <constraint firstAttribute="bottom" secondItem="W28-oj-HjQ" secondAttribute="bottom" constant="35" id="tAG-nP-JTS"/>
+                <constraint firstItem="Mpq-Ai-D6n" firstAttribute="leading" secondItem="301-8v-5fr" secondAttribute="trailing" constant="10" id="tTC-y3-gSr"/>
+                <constraint firstItem="Mpq-Ai-D6n" firstAttribute="centerY" secondItem="301-8v-5fr" secondAttribute="centerY" id="uzQ-yu-m2R"/>
+                <constraint firstItem="Q7l-6b-5Cj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zxF-P3-O6y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgTopConstraint" destination="zxF-P3-O6y" id="eLP-hf-dy6"/>
+                <outlet property="remainLabel" destination="W28-oj-HjQ" id="2rO-z4-l6W"/>
+                <outlet property="stateImageV" destination="301-8v-5fr" id="F9M-UR-AcS"/>
+                <outlet property="stateLabel" destination="Mpq-Ai-D6n" id="7Tg-rA-aGq"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile_bg" width="375" height="150"/>
+        <image name="wait" width="14" height="14"/>
+    </resources>
+</document>

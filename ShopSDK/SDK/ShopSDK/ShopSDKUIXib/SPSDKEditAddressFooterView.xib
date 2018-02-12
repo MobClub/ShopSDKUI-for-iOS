@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPSDKEditAddressFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yM-dK-zUe">
+                    <rect key="frame" x="10" y="0.0" width="105" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="rS0-VF-Ytl"/>
+                        <constraint firstAttribute="height" constant="36" id="tkI-KO-1P2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="设为默认地址" image="address_normal">
+                        <color key="titleColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="address_selected"/>
+                    <connections>
+                        <action selector="onDefaultAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="0Lg-PP-cad"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="na3-gT-ILX">
+                    <rect key="frame" x="310" y="0.0" width="50" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="LX2-0g-afW"/>
+                        <constraint firstAttribute="height" constant="36" id="bxf-vq-Oxi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="删除" image="address_delete">
+                        <color key="titleColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onDeleteAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Ic-8j-4uV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUl-MK-wBl">
+                    <rect key="frame" x="245" y="0.0" width="50" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="UVs-6t-dzi"/>
+                        <constraint firstAttribute="height" constant="36" id="ZEo-oZ-fvi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="编辑" image="address_edit">
+                        <color key="titleColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onEditAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="RFm-uH-Ek0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="na3-gT-ILX" secondAttribute="trailing" constant="15" id="GoG-26-EEB"/>
+                <constraint firstItem="na3-gT-ILX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QC9-Vs-vQX"/>
+                <constraint firstItem="3yM-dK-zUe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RRX-uD-Pld"/>
+                <constraint firstItem="cUl-MK-wBl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WKH-HY-bbz"/>
+                <constraint firstItem="3yM-dK-zUe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="pEe-dX-4Tj"/>
+                <constraint firstItem="na3-gT-ILX" firstAttribute="leading" secondItem="cUl-MK-wBl" secondAttribute="trailing" constant="15" id="qjc-ai-Np3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="defaultBtn" destination="3yM-dK-zUe" id="hHo-xz-ARg"/>
+                <outlet property="deleteBtn" destination="na3-gT-ILX" id="uC0-n6-VwO"/>
+                <outlet property="editBtn" destination="cUl-MK-wBl" id="xjb-88-ydH"/>
+            </connections>
+            <point key="canvasLocation" x="47.5" y="57"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="address_delete" width="13" height="13"/>
+        <image name="address_edit" width="13" height="13"/>
+        <image name="address_normal" width="15" height="15"/>
+        <image name="address_selected" width="15" height="15"/>
+    </resources>
+</document>

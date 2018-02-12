@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKCouponViewController">
+            <connections>
+                <outlet property="barHeight" destination="mfD-sQ-Xc5" id="coK-JD-wdW"/>
+                <outlet property="bottomConstraint" destination="KJC-30-gMF" id="bDq-MQ-mtT"/>
+                <outlet property="sureBtn" destination="qtz-09-2DH" id="aiA-Fy-6Rk"/>
+                <outlet property="tableView" destination="rJX-bM-tYy" id="OQ9-bm-TKi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rJX-bM-tYy" customClass="SPSDKTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="IqW-1q-8FJ"/>
+                        <outlet property="delegate" destination="-1" id="bLP-fN-fPa"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtz-09-2DH">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="mfD-sQ-Xc5"/>
+                    </constraints>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="onAction:" destination="-1" eventType="touchUpInside" id="HQM-an-FjD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rJX-bM-tYy" secondAttribute="trailing" id="7eC-v3-MAR"/>
+                <constraint firstAttribute="bottom" secondItem="qtz-09-2DH" secondAttribute="bottom" id="KJC-30-gMF"/>
+                <constraint firstItem="rJX-bM-tYy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MVa-iw-gbL"/>
+                <constraint firstItem="qtz-09-2DH" firstAttribute="top" secondItem="rJX-bM-tYy" secondAttribute="bottom" id="aem-vx-1jL"/>
+                <constraint firstItem="rJX-bM-tYy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lOW-jd-W9l"/>
+                <constraint firstItem="qtz-09-2DH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pIH-7i-g42"/>
+                <constraint firstAttribute="trailing" secondItem="qtz-09-2DH" secondAttribute="trailing" id="rPK-lE-syh"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

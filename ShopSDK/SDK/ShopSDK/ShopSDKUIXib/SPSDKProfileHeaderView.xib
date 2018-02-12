@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPSDKProfileHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CDh-9n-rGD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmA-TC-mKW">
+                    <rect key="frame" x="0.0" y="86" width="375" height="89"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ksn-1h-NZu" customClass="SPSDKBadgeView">
+                            <rect key="frame" x="0.0" y="0.0" width="75" height="89"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="dfk"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="待付款"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hL1-NW-zny" customClass="SPSDKBadgeView">
+                            <rect key="frame" x="75" y="0.0" width="75" height="89"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="dfh"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="待发货"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuz-rx-h9N" customClass="SPSDKBadgeView">
+                            <rect key="frame" x="150" y="0.0" width="75" height="89"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="dsh"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="待收货"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwu-0p-efo" customClass="SPSDKBadgeView">
+                            <rect key="frame" x="225" y="0.0" width="75" height="89"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="thsh"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="退货售后"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Up8-2S-2Fv" customClass="SPSDKBadgeView">
+                            <rect key="frame" x="300" y="0.0" width="75" height="89"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="全部订单"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="qbdd"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="bwu-0p-efo" firstAttribute="top" secondItem="gmA-TC-mKW" secondAttribute="top" id="2xW-NI-6jS"/>
+                        <constraint firstItem="Xuz-rx-h9N" firstAttribute="top" secondItem="gmA-TC-mKW" secondAttribute="top" id="537-rN-AFu"/>
+                        <constraint firstItem="hL1-NW-zny" firstAttribute="height" secondItem="Ksn-1h-NZu" secondAttribute="height" id="9dz-qZ-Xb5"/>
+                        <constraint firstItem="Up8-2S-2Fv" firstAttribute="top" secondItem="gmA-TC-mKW" secondAttribute="top" id="AiN-BO-LGt"/>
+                        <constraint firstAttribute="trailing" secondItem="Up8-2S-2Fv" secondAttribute="trailing" id="Eaq-FK-GEJ"/>
+                        <constraint firstItem="Up8-2S-2Fv" firstAttribute="leading" secondItem="bwu-0p-efo" secondAttribute="trailing" id="Ekz-nT-fxr"/>
+                        <constraint firstItem="bwu-0p-efo" firstAttribute="width" secondItem="Ksn-1h-NZu" secondAttribute="width" id="HRi-bl-UKi"/>
+                        <constraint firstAttribute="bottom" secondItem="Ksn-1h-NZu" secondAttribute="bottom" id="HZw-x7-9C4"/>
+                        <constraint firstItem="hL1-NW-zny" firstAttribute="top" secondItem="gmA-TC-mKW" secondAttribute="top" id="Nvh-PV-q2E"/>
+                        <constraint firstAttribute="bottom" secondItem="hL1-NW-zny" secondAttribute="bottom" id="OfC-0B-SNw"/>
+                        <constraint firstItem="Ksn-1h-NZu" firstAttribute="leading" secondItem="gmA-TC-mKW" secondAttribute="leading" id="QoG-gl-DTJ"/>
+                        <constraint firstAttribute="bottom" secondItem="Xuz-rx-h9N" secondAttribute="bottom" id="SS6-qe-1Xw"/>
+                        <constraint firstAttribute="height" constant="89" id="WrP-Nx-NAq"/>
+                        <constraint firstItem="bwu-0p-efo" firstAttribute="leading" secondItem="Xuz-rx-h9N" secondAttribute="trailing" id="ZzT-N7-Os8"/>
+                        <constraint firstItem="Xuz-rx-h9N" firstAttribute="height" secondItem="Ksn-1h-NZu" secondAttribute="height" id="fN3-ji-bKU"/>
+                        <constraint firstAttribute="bottom" secondItem="Up8-2S-2Fv" secondAttribute="bottom" id="g7v-gu-gGS"/>
+                        <constraint firstItem="bwu-0p-efo" firstAttribute="height" secondItem="Ksn-1h-NZu" secondAttribute="height" id="jeH-cD-gGy"/>
+                        <constraint firstItem="Up8-2S-2Fv" firstAttribute="width" secondItem="Ksn-1h-NZu" secondAttribute="width" id="nbt-J1-YuS"/>
+                        <constraint firstItem="hL1-NW-zny" firstAttribute="width" secondItem="Ksn-1h-NZu" secondAttribute="width" id="osp-Vt-VMF"/>
+                        <constraint firstItem="Ksn-1h-NZu" firstAttribute="top" secondItem="gmA-TC-mKW" secondAttribute="top" id="s2l-mM-3Mz"/>
+                        <constraint firstItem="hL1-NW-zny" firstAttribute="leading" secondItem="Ksn-1h-NZu" secondAttribute="trailing" id="tib-Q1-hgh"/>
+                        <constraint firstItem="Xuz-rx-h9N" firstAttribute="width" secondItem="Ksn-1h-NZu" secondAttribute="width" id="udn-UV-eSS"/>
+                        <constraint firstAttribute="bottom" secondItem="bwu-0p-efo" secondAttribute="bottom" id="xxS-QX-BAX"/>
+                        <constraint firstItem="Xuz-rx-h9N" firstAttribute="leading" secondItem="hL1-NW-zny" secondAttribute="trailing" id="zw3-Kw-xvP"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="NzN-6m-fUX">
+                    <rect key="frame" x="15" y="4" width="67" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="HDE-on-w7z"/>
+                        <constraint firstAttribute="height" constant="67" id="VUY-Vp-XFv"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWY-AF-NKp">
+                    <rect key="frame" x="100" y="28" width="79" height="18"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name_more" translatesAutoresizingMaskIntoConstraints="NO" id="3yp-eb-5Iy">
+                            <rect key="frame" x="73" y="3.5" width="6" height="11"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="半半1194" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fw-I5-1DJ">
+                            <rect key="frame" x="0.0" y="0.0" width="63" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="6Fw-I5-1DJ" firstAttribute="leading" secondItem="LWY-AF-NKp" secondAttribute="leading" id="8Lx-M4-3Mj"/>
+                        <constraint firstItem="6Fw-I5-1DJ" firstAttribute="top" secondItem="LWY-AF-NKp" secondAttribute="top" id="MpX-QQ-2iw"/>
+                        <constraint firstItem="3yp-eb-5Iy" firstAttribute="leading" secondItem="6Fw-I5-1DJ" secondAttribute="trailing" constant="10" id="mo7-qn-p6X"/>
+                        <constraint firstItem="3yp-eb-5Iy" firstAttribute="centerY" secondItem="LWY-AF-NKp" secondAttribute="centerY" id="oc1-WI-UhO"/>
+                        <constraint firstAttribute="bottom" secondItem="6Fw-I5-1DJ" secondAttribute="bottom" id="tiN-aP-aW2"/>
+                        <constraint firstAttribute="trailing" secondItem="3yp-eb-5Iy" secondAttribute="trailing" id="wpc-N8-ph8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CDh-9n-rGD" secondAttribute="trailing" id="07h-1d-6dq"/>
+                <constraint firstItem="NzN-6m-fUX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="0kK-cM-LMd"/>
+                <constraint firstAttribute="bottom" secondItem="gmA-TC-mKW" secondAttribute="bottom" constant="10" id="1g6-nb-L4Z"/>
+                <constraint firstItem="gmA-TC-mKW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ssd-lf-ISU"/>
+                <constraint firstItem="gmA-TC-mKW" firstAttribute="top" secondItem="NzN-6m-fUX" secondAttribute="bottom" constant="15" id="YBV-ju-BxP"/>
+                <constraint firstItem="LWY-AF-NKp" firstAttribute="leading" secondItem="NzN-6m-fUX" secondAttribute="trailing" constant="18" id="cRC-Me-nnd"/>
+                <constraint firstItem="CDh-9n-rGD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gR5-bT-Jty"/>
+                <constraint firstAttribute="trailing" secondItem="gmA-TC-mKW" secondAttribute="trailing" id="pmz-2g-tqW"/>
+                <constraint firstItem="CDh-9n-rGD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qop-RL-VVN"/>
+                <constraint firstAttribute="bottom" secondItem="CDh-9n-rGD" secondAttribute="bottom" constant="10" id="s4v-iT-M4x"/>
+                <constraint firstItem="LWY-AF-NKp" firstAttribute="centerY" secondItem="NzN-6m-fUX" secondAttribute="centerY" id="zmA-dG-dtF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgTopConstraint" destination="qop-RL-VVN" id="O8g-hB-Evl"/>
+                <outlet property="iconImageV" destination="NzN-6m-fUX" id="S0Y-c4-IqJ"/>
+                <outlet property="imageV" destination="CDh-9n-rGD" id="8Or-UL-wdU"/>
+                <outlet property="nameContentView" destination="LWY-AF-NKp" id="TfK-c5-vxX"/>
+                <outlet property="nameLabel" destination="6Fw-I5-1DJ" id="21S-gZ-thf"/>
+                <outlet property="view1" destination="Ksn-1h-NZu" id="Q1d-kk-dGI"/>
+                <outlet property="view2" destination="hL1-NW-zny" id="aUS-IX-CM2"/>
+                <outlet property="view3" destination="Xuz-rx-h9N" id="Q9h-am-6FQ"/>
+                <outlet property="view4" destination="bwu-0p-efo" id="OCP-cz-kei"/>
+                <outlet property="view5" destination="Up8-2S-2Fv" id="8ix-yN-BL4"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="default_image" width="67" height="67"/>
+        <image name="dfh" width="23" height="23"/>
+        <image name="dfk" width="23" height="23"/>
+        <image name="dsh" width="23" height="23"/>
+        <image name="name_more" width="6" height="11"/>
+        <image name="qbdd" width="23" height="23"/>
+        <image name="thsh" width="23" height="23"/>
+    </resources>
+</document>

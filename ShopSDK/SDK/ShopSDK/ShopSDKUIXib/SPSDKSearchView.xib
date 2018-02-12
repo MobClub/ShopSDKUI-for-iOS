@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPSDKSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="29"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="Ylg-Ym-POD">
+                    <rect key="frame" x="10" y="7" width="15" height="15"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="搜索" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="56P-3G-H6M">
+                    <rect key="frame" x="25" y="0.0" width="275" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="hmf-tx-iEm"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3M-mg-K9V">
+                    <rect key="frame" x="274" y="4" width="16" height="22"/>
+                    <state key="normal" image="search_clear"/>
+                    <connections>
+                        <action selector="onClearAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="QwP-JI-F5p"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b3M-mg-K9V" secondAttribute="trailing" constant="10" id="AT2-CD-n6c"/>
+                <constraint firstAttribute="trailing" secondItem="56P-3G-H6M" secondAttribute="trailing" id="OEt-9c-Sk9"/>
+                <constraint firstItem="56P-3G-H6M" firstAttribute="leading" secondItem="Ylg-Ym-POD" secondAttribute="trailing" id="ZzJ-SL-BIK"/>
+                <constraint firstItem="56P-3G-H6M" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dth-wR-zsD"/>
+                <constraint firstItem="Ylg-Ym-POD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kAB-rz-Npo"/>
+                <constraint firstItem="b3M-mg-K9V" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uYG-Ap-Ih8"/>
+                <constraint firstItem="Ylg-Ym-POD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="zam-25-U3a"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <real key="value" value="14.5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="clearBtn" destination="b3M-mg-K9V" id="MiD-du-e6J"/>
+                <outlet property="textField" destination="56P-3G-H6M" id="Q11-PT-0Am"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="search" width="15" height="15"/>
+        <image name="search_clear" width="16" height="16"/>
+    </resources>
+</document>

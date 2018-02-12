@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SPSDKProfileCell" id="KGk-i7-Jjw" customClass="SPSDKProfileCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kfbz" translatesAutoresizingMaskIntoConstraints="NO" id="1Ug-Nd-5Rm">
+                        <rect key="frame" x="10" y="14" width="20" height="20"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠券" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bko-gL-BTd">
+                        <rect key="frame" x="40" y="15.5" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="S3Y-eB-8Dn">
+                        <rect key="frame" x="358" y="17" width="7" height="14"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0张优惠券" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lr3-Gd-Ibb">
+                        <rect key="frame" x="291" y="17" width="57" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12z-XA-62e">
+                        <rect key="frame" x="10" y="49" width="355" height="0.0"/>
+                        <color key="backgroundColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="cLv-i2-p3d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S3Y-eB-8Dn" firstAttribute="centerY" secondItem="1Ug-Nd-5Rm" secondAttribute="centerY" id="Es6-pu-35H"/>
+                    <constraint firstItem="Bko-gL-BTd" firstAttribute="leading" secondItem="1Ug-Nd-5Rm" secondAttribute="trailing" constant="10" id="Kwh-mG-VWv"/>
+                    <constraint firstAttribute="trailing" secondItem="S3Y-eB-8Dn" secondAttribute="trailing" constant="10" id="LE9-eQ-C5e"/>
+                    <constraint firstItem="Bko-gL-BTd" firstAttribute="centerY" secondItem="1Ug-Nd-5Rm" secondAttribute="centerY" id="RPT-nm-FJr"/>
+                    <constraint firstItem="S3Y-eB-8Dn" firstAttribute="leading" secondItem="Lr3-Gd-Ibb" secondAttribute="trailing" constant="10" id="W0C-Hi-F1X"/>
+                    <constraint firstItem="1Ug-Nd-5Rm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ztv-Dw-bgm"/>
+                    <constraint firstAttribute="bottom" secondItem="12z-XA-62e" secondAttribute="bottom" constant="0.5" id="hQZ-yy-WRG"/>
+                    <constraint firstItem="1Ug-Nd-5Rm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lSR-3z-NYK"/>
+                    <constraint firstItem="S3Y-eB-8Dn" firstAttribute="centerY" secondItem="Lr3-Gd-Ibb" secondAttribute="centerY" id="tK9-tC-xxg"/>
+                    <constraint firstAttribute="trailing" secondItem="12z-XA-62e" secondAttribute="trailing" constant="10" id="tco-Vf-Xok"/>
+                    <constraint firstItem="12z-XA-62e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="u4b-fO-VsQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImageV" destination="S3Y-eB-8Dn" id="cCr-kQ-fPI"/>
+                <outlet property="detailLabel" destination="Lr3-Gd-Ibb" id="ano-v8-MIN"/>
+                <outlet property="iconImageV" destination="1Ug-Nd-5Rm" id="Khy-nH-45n"/>
+                <outlet property="line" destination="12z-XA-62e" id="Lgm-1w-XMu"/>
+                <outlet property="titleLabel" destination="Bko-gL-BTd" id="RYG-zz-Vt2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="7" height="14"/>
+        <image name="kfbz" width="20" height="20"/>
+    </resources>
+</document>

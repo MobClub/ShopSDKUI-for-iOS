@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SPSDKAllProductGridCell" id="gTV-IL-0wX" customClass="SPSDKAllProductGridCell">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="257"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="257"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0CI-st-aNP">
+                        <rect key="frame" x="0.0" y="0.0" width="185" height="185"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0CI-st-aNP" secondAttribute="height" multiplier="1:1" id="DYw-mV-Bw2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="乔丹 男跑鞋缓震气垫运动鞋跑步鞋 XM1570232 伽马蓝/闪亮橘 42" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dj-5Q-uDo">
+                        <rect key="frame" x="5" y="195" width="175" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKa-BJ-vHK">
+                        <rect key="frame" x="5" y="231.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFf-Vv-gKL">
+                        <rect key="frame" x="65" y="237" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0CI-st-aNP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="64V-wa-23Q"/>
+                <constraint firstItem="SKa-BJ-vHK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0dj-5Q-uDo" secondAttribute="bottom" constant="5" id="Eeo-vw-DCf"/>
+                <constraint firstItem="0CI-st-aNP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IJv-EB-uVW"/>
+                <constraint firstItem="SKa-BJ-vHK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="SoG-Xy-abv"/>
+                <constraint firstAttribute="bottom" secondItem="SKa-BJ-vHK" secondAttribute="bottom" constant="5" id="Ueh-I0-PZz"/>
+                <constraint firstItem="0CI-st-aNP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xx4-ax-zMl"/>
+                <constraint firstItem="0dj-5Q-uDo" firstAttribute="top" secondItem="0CI-st-aNP" secondAttribute="bottom" constant="10" id="ZEK-ZZ-7q1"/>
+                <constraint firstItem="0dj-5Q-uDo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="cow-M0-P0g"/>
+                <constraint firstAttribute="trailing" secondItem="0CI-st-aNP" secondAttribute="trailing" id="k4C-Ih-sEf"/>
+                <constraint firstAttribute="trailing" secondItem="0dj-5Q-uDo" secondAttribute="trailing" constant="5" id="lOj-eC-cxZ"/>
+                <constraint firstItem="uFf-Vv-gKL" firstAttribute="leading" secondItem="SKa-BJ-vHK" secondAttribute="trailing" constant="18" id="mHH-cM-LC8"/>
+                <constraint firstItem="uFf-Vv-gKL" firstAttribute="bottom" secondItem="SKa-BJ-vHK" secondAttribute="bottom" id="yq7-BS-oNP"/>
+            </constraints>
+            <connections>
+                <outlet property="descLabel" destination="0dj-5Q-uDo" id="lTn-9T-FKR"/>
+                <outlet property="imageV" destination="0CI-st-aNP" id="jLJ-fP-ab7"/>
+                <outlet property="priceLabel" destination="SKa-BJ-vHK" id="PzR-eH-yJk"/>
+                <outlet property="salesLabel" destination="uFf-Vv-gKL" id="4zq-i1-6rN"/>
+            </connections>
+            <point key="canvasLocation" x="50.5" y="53.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

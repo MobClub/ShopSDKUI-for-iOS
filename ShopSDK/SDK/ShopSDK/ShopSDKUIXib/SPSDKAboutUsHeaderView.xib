@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKAboutUsHeaderView">
+            <connections>
+                <outlet property="line" destination="ry8-Mp-mQ7" id="D0X-4I-tMa"/>
+                <outlet property="selectBtn" destination="6Qs-WB-4kL" id="7EY-pp-x04"/>
+                <outlet property="titleLabel" destination="ehu-CC-hgO" id="uKj-zZ-uUt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版权信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehu-CC-hgO">
+                    <rect key="frame" x="15" y="12" width="54" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ry8-Mp-mQ7">
+                    <rect key="frame" x="0.0" y="39" width="462" height="1"/>
+                    <color key="backgroundColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="kYw-0r-IL5"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qs-WB-4kL">
+                    <rect key="frame" x="436" y="9" width="11" height="22"/>
+                    <state key="normal" image="bq_xx"/>
+                    <state key="selected" image="bq_xs"/>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="e14-00-AN5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6Qs-WB-4kL" secondAttribute="trailing" constant="15" id="DUZ-X1-W4g"/>
+                <constraint firstAttribute="trailing" secondItem="ry8-Mp-mQ7" secondAttribute="trailing" id="OO6-ZP-g7A"/>
+                <constraint firstItem="6Qs-WB-4kL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="X1f-M4-hCA"/>
+                <constraint firstItem="ry8-Mp-mQ7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="b3w-Mx-h1c"/>
+                <constraint firstItem="ehu-CC-hgO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="b42-QF-Qhh"/>
+                <constraint firstItem="ehu-CC-hgO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ger-N2-goE"/>
+                <constraint firstItem="ry8-Mp-mQ7" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="l0O-0z-q9q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-136" y="148"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bq_xs" width="11" height="6"/>
+        <image name="bq_xx" width="11" height="6"/>
+    </resources>
+</document>

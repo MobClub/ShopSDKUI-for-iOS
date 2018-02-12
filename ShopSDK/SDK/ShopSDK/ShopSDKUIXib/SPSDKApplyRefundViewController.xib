@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKApplyRefundViewController">
+            <connections>
+                <outlet property="bottomConstraint" destination="uew-Xg-IVt" id="oaW-Qf-4DZ"/>
+                <outlet property="submitBtn" destination="ixR-Yi-tcP" id="s0l-c0-N62"/>
+                <outlet property="tableView" destination="jlQ-uJ-hji" id="cVO-O7-HXO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="jlQ-uJ-hji" customClass="SPSDKGroupTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="o5U-uZ-FJd"/>
+                        <outlet property="delegate" destination="-1" id="fC1-Kg-el0"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-Yi-tcP">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="WT6-kJ-G0t"/>
+                    </constraints>
+                    <state key="normal" title="提交"/>
+                    <connections>
+                        <action selector="onSubmitAction:" destination="-1" eventType="touchUpInside" id="4Rw-pd-Muf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ixR-Yi-tcP" secondAttribute="trailing" id="1l0-1S-TB1"/>
+                <constraint firstItem="jlQ-uJ-hji" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mXO-QO-dlF"/>
+                <constraint firstItem="ixR-Yi-tcP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oOE-SE-4bV"/>
+                <constraint firstAttribute="trailing" secondItem="jlQ-uJ-hji" secondAttribute="trailing" id="rEe-kH-Ir5"/>
+                <constraint firstAttribute="bottom" secondItem="ixR-Yi-tcP" secondAttribute="bottom" id="uew-Xg-IVt"/>
+                <constraint firstItem="ixR-Yi-tcP" firstAttribute="top" secondItem="jlQ-uJ-hji" secondAttribute="bottom" id="wNN-qG-GWE"/>
+                <constraint firstItem="jlQ-uJ-hji" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yuA-0v-FHw"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

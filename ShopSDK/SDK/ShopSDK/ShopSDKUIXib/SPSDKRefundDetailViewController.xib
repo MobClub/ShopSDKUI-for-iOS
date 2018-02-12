@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKRefundDetailViewController">
+            <connections>
+                <outlet property="barView" destination="EEz-yE-sy5" id="QeL-e6-YoY"/>
+                <outlet property="bottomConstraint" destination="Rac-uD-C2o" id="ZzZ-u3-CEh"/>
+                <outlet property="contactServiceBtn" destination="Z06-7k-Tre" id="TlJ-xF-ajc"/>
+                <outlet property="orderDetailBtn" destination="h7J-Cc-T7o" id="cdy-Jl-fUU"/>
+                <outlet property="tableView" destination="hIf-6G-QF9" id="XlB-UA-73N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hIf-6G-QF9" customClass="SPSDKGroupTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XFi-Lp-kjQ"/>
+                        <outlet property="delegate" destination="-1" id="5t5-e4-kIA"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEz-yE-sy5">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7J-Cc-T7o">
+                            <rect key="frame" x="15" y="9.5" width="70" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="cQ0-xR-PoX"/>
+                                <constraint firstAttribute="height" constant="25" id="ePi-Iy-fuj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="订单详情">
+                                <color key="titleColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onOrderDetailAction:" destination="-1" eventType="touchUpInside" id="ezn-xe-DX8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z06-7k-Tre">
+                            <rect key="frame" x="515" y="9.5" width="70" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="0H9-Xw-BPK"/>
+                                <constraint firstAttribute="height" constant="25" id="5jc-xY-w6b"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="联系客服">
+                                <color key="titleColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onServiceAction:" destination="-1" eventType="touchUpInside" id="cKv-gr-db5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="h7J-Cc-T7o" firstAttribute="leading" secondItem="EEz-yE-sy5" secondAttribute="leading" constant="15" id="0gA-96-UYG"/>
+                        <constraint firstItem="Z06-7k-Tre" firstAttribute="centerY" secondItem="EEz-yE-sy5" secondAttribute="centerY" id="9re-vN-5mN"/>
+                        <constraint firstAttribute="height" constant="45" id="LrS-MF-cav"/>
+                        <constraint firstAttribute="trailing" secondItem="Z06-7k-Tre" secondAttribute="trailing" constant="15" id="dak-17-A7b"/>
+                        <constraint firstItem="h7J-Cc-T7o" firstAttribute="centerY" secondItem="EEz-yE-sy5" secondAttribute="centerY" id="qK2-AE-JjU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="EEz-yE-sy5" firstAttribute="top" secondItem="hIf-6G-QF9" secondAttribute="bottom" id="FBa-Nl-eYx"/>
+                <constraint firstItem="EEz-yE-sy5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Me6-ly-qI8"/>
+                <constraint firstAttribute="bottom" secondItem="EEz-yE-sy5" secondAttribute="bottom" id="Rac-uD-C2o"/>
+                <constraint firstAttribute="trailing" secondItem="EEz-yE-sy5" secondAttribute="trailing" id="Rdm-qp-8Gh"/>
+                <constraint firstAttribute="trailing" secondItem="hIf-6G-QF9" secondAttribute="trailing" id="U6F-54-nNl"/>
+                <constraint firstItem="hIf-6G-QF9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ycw-rH-ENX"/>
+                <constraint firstItem="hIf-6G-QF9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="g9y-W2-WAA"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

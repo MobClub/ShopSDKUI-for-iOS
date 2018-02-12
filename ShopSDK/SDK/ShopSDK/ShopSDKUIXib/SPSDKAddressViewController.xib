@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKAddressViewController">
+            <connections>
+                <outlet property="addressBtn" destination="CQZ-Sl-0TN" id="xOt-0R-wev"/>
+                <outlet property="barHeight" destination="JfY-h9-BvS" id="k5l-9P-AtP"/>
+                <outlet property="bottomConstraint" destination="mWr-L8-YOi" id="KQZ-7X-deL"/>
+                <outlet property="tableView" destination="854-A8-heN" id="yIr-VO-SGU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="140" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="854-A8-heN" customClass="SPSDKGroupTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="tlV-PL-wIe"/>
+                        <outlet property="delegate" destination="-1" id="BpU-f8-arc"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQZ-Sl-0TN">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="JfY-h9-BvS"/>
+                    </constraints>
+                    <state key="normal" title="添加新地址"/>
+                    <connections>
+                        <action selector="_onAddressAction:" destination="-1" eventType="touchUpInside" id="QgQ-xo-4Mi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="854-A8-heN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2OE-TX-hsm"/>
+                <constraint firstItem="CQZ-Sl-0TN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Z1-Cb-dyB"/>
+                <constraint firstAttribute="trailing" secondItem="CQZ-Sl-0TN" secondAttribute="trailing" id="KMU-b3-QUq"/>
+                <constraint firstItem="854-A8-heN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aC2-Sk-0rt"/>
+                <constraint firstAttribute="bottom" secondItem="CQZ-Sl-0TN" secondAttribute="bottom" id="mWr-L8-YOi"/>
+                <constraint firstAttribute="trailing" secondItem="854-A8-heN" secondAttribute="trailing" id="sgK-8n-NU5"/>
+                <constraint firstItem="CQZ-Sl-0TN" firstAttribute="top" secondItem="854-A8-heN" secondAttribute="bottom" id="tQx-Fj-b5E"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

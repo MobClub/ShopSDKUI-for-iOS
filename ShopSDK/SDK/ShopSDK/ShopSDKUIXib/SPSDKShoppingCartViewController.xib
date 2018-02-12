@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKShoppingCartViewController">
+            <connections>
+                <outlet property="barConstraint" destination="ahq-CF-vI9" id="OjZ-H9-VfW"/>
+                <outlet property="barView" destination="eK8-VI-fGg" id="nJl-kp-gVw"/>
+                <outlet property="bottomConstraint" destination="YnY-zS-iV6" id="Bzi-kW-jef"/>
+                <outlet property="tableView" destination="qA4-mU-J79" id="BQs-Or-NFj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eK8-VI-fGg" customClass="SPSDKShopBarView">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ahq-CF-vI9"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="115" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qA4-mU-J79" customClass="SPSDKTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nxG-CO-Qml"/>
+                        <outlet property="delegate" destination="-1" id="GXp-xG-viB"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qA4-mU-J79" secondAttribute="trailing" id="0xP-Ee-gL4"/>
+                <constraint firstAttribute="trailing" secondItem="eK8-VI-fGg" secondAttribute="trailing" id="2fl-Qm-qek"/>
+                <constraint firstItem="qA4-mU-J79" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="75q-4P-Nd9"/>
+                <constraint firstItem="qA4-mU-J79" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RKg-xz-rRb"/>
+                <constraint firstAttribute="bottom" secondItem="eK8-VI-fGg" secondAttribute="bottom" id="YnY-zS-iV6"/>
+                <constraint firstItem="eK8-VI-fGg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="weM-QN-em2"/>
+                <constraint firstItem="eK8-VI-fGg" firstAttribute="top" secondItem="qA4-mU-J79" secondAttribute="bottom" id="zlN-8j-y0s"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

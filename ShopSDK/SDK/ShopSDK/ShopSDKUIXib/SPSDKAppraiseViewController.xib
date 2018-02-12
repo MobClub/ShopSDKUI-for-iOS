@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKAppraiseViewController">
+            <connections>
+                <outlet property="bottomConstraint" destination="SbJ-ir-7hg" id="Lem-w7-vzb"/>
+                <outlet property="submitBtn" destination="SrT-wF-XRS" id="mYJ-B7-XVe"/>
+                <outlet property="tableView" destination="VCn-mu-C2c" id="j5R-Jy-wsV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrT-wF-XRS">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="zxi-D0-oLC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="提交"/>
+                    <connections>
+                        <action selector="onSubmitAction:" destination="-1" eventType="touchUpInside" id="4Fi-mU-bsu"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="VCn-mu-C2c" customClass="SPSDKGroupTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="12j-Ls-bOw"/>
+                        <outlet property="delegate" destination="-1" id="PlO-fw-6FL"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VCn-mu-C2c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ACo-CI-bZA"/>
+                <constraint firstAttribute="trailing" secondItem="VCn-mu-C2c" secondAttribute="trailing" id="Duv-Su-WN0"/>
+                <constraint firstItem="VCn-mu-C2c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F0m-Df-Fgh"/>
+                <constraint firstItem="SrT-wF-XRS" firstAttribute="top" secondItem="VCn-mu-C2c" secondAttribute="bottom" id="I3a-tN-VOL"/>
+                <constraint firstItem="SrT-wF-XRS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="R0E-F8-bfA"/>
+                <constraint firstAttribute="bottom" secondItem="SrT-wF-XRS" secondAttribute="bottom" id="SbJ-ir-7hg"/>
+                <constraint firstAttribute="trailing" secondItem="SrT-wF-XRS" secondAttribute="trailing" id="xt9-xj-FCX"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSDKConfirmOrderViewController">
+            <connections>
+                <outlet property="barView" destination="wuv-AD-Msl" id="KCY-Ke-8eM"/>
+                <outlet property="bottomConstraint" destination="0OI-Kr-Pi4" id="XJ8-z2-Qeb"/>
+                <outlet property="tableView" destination="ioV-Ke-ziC" id="HGU-oN-qia"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuv-AD-Msl" customClass="SPSDKShopBarView">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="F6c-at-uDN"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ioV-Ke-ziC" customClass="SPSDKGroupTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GOX-5n-tgN"/>
+                        <outlet property="delegate" destination="-1" id="Ask-i5-ZhD"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wuv-AD-Msl" secondAttribute="bottom" id="0OI-Kr-Pi4"/>
+                <constraint firstItem="wuv-AD-Msl" firstAttribute="top" secondItem="ioV-Ke-ziC" secondAttribute="bottom" id="BBq-QD-1pr"/>
+                <constraint firstItem="wuv-AD-Msl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gQc-cE-1jA"/>
+                <constraint firstItem="ioV-Ke-ziC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kS2-Dh-yd3"/>
+                <constraint firstAttribute="trailing" secondItem="ioV-Ke-ziC" secondAttribute="trailing" id="oAb-gt-RdM"/>
+                <constraint firstItem="ioV-Ke-ziC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="svy-yc-BU2"/>
+                <constraint firstAttribute="trailing" secondItem="wuv-AD-Msl" secondAttribute="trailing" id="uG5-E9-Njm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

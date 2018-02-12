@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SPSDKAddressCell" id="KGk-i7-Jjw" customClass="SPSDKAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT5-Ig-r5q">
+                        <rect key="frame" x="15" y="14" width="330" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" text="LabelLabelLabelLabelLabelLa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej4-Sk-8Pt">
+                        <rect key="frame" x="82" y="45" width="263" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货地址：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9K-dk-JW7">
+                        <rect key="frame" x="15" y="45" width="67" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="Od2-Q2-XSh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="SGh-RK-N7C">
+                        <rect key="frame" x="353" y="30.5" width="7" height="14"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aT5-Ig-r5q" secondAttribute="trailing" constant="30" id="8Af-OO-QQT"/>
+                    <constraint firstItem="Ej4-Sk-8Pt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="82" id="IzY-Ab-nId"/>
+                    <constraint firstAttribute="bottom" secondItem="Ej4-Sk-8Pt" secondAttribute="bottom" constant="14" id="LZ9-oP-4Jf"/>
+                    <constraint firstItem="Ej4-Sk-8Pt" firstAttribute="top" secondItem="aT5-Ig-r5q" secondAttribute="bottom" constant="15" id="MIX-od-8r3"/>
+                    <constraint firstItem="b9K-dk-JW7" firstAttribute="leading" secondItem="aT5-Ig-r5q" secondAttribute="leading" id="Pxp-LD-woq"/>
+                    <constraint firstItem="SGh-RK-N7C" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XiV-Vl-o5l"/>
+                    <constraint firstItem="aT5-Ig-r5q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="YBa-Tg-aO8"/>
+                    <constraint firstItem="b9K-dk-JW7" firstAttribute="top" secondItem="aT5-Ig-r5q" secondAttribute="bottom" constant="15" id="Yfk-u6-Wbi"/>
+                    <constraint firstAttribute="trailing" secondItem="Ej4-Sk-8Pt" secondAttribute="trailing" constant="30" id="ZPH-gh-fL7"/>
+                    <constraint firstAttribute="trailing" secondItem="SGh-RK-N7C" secondAttribute="trailing" constant="15" id="dZO-zq-QUF"/>
+                    <constraint firstItem="aT5-Ig-r5q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ffG-5c-F0K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="Ej4-Sk-8Pt" id="eWX-Bk-Led"/>
+                <outlet property="arrowImageV" destination="SGh-RK-N7C" id="iQr-sc-bka"/>
+                <outlet property="contactLabel" destination="aT5-Ig-r5q" id="nhw-Z4-Rdq"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="7" height="14"/>
+    </resources>
+</document>
